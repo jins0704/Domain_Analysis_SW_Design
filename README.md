@@ -38,7 +38,6 @@
     ![carinfo](/uploads/carinfo.png)
     ![addConsumables](/uploads/addConsumables.png)
     ![modifyConsumables](/uploads/modifyConsumables.png)
-    ![delteConsumables](/uploads/delteConsumables.png)
-    
+    ![delteConsumables](/uploads/delteConsumables.png)    
 ### Controller 
 - Manage consumables
