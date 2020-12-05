@@ -33,11 +33,11 @@
            var detail : String? (consumable's information with Percentage)
            var categoryN : String? (consumable's category)
 ### View
-    ![carinfo](./image/carinfo.png)
-    ![contable](/image/contable.PNG)
-    ![carinfo](/uploads/carinfo.png)
-    ![addConsumables](/uploads/addConsumables.png)
-    ![modifyConsumables](/uploads/modifyConsumables.png)
-    ![delteConsumables](/uploads/delteConsumables.png)    
+![carinfo](https://user-images.githubusercontent.com/70695311/101260668-9aeeb000-3774-11eb-9b45-01d9a492a835.png)
+![contable](https://user-images.githubusercontent.com/70695311/101260663-932f0b80-3774-11eb-8f73-88a8602a0d4c.png)
+![addConsumables2](https://user-images.githubusercontent.com/70695311/101260667-988c5600-3774-11eb-85aa-b166cdf44eb9.png)
+![modifyConsumables](https://user-images.githubusercontent.com/70695311/101260673-a80b9f00-3774-11eb-8c85-4d4410cd049a.png)
+![delteConsumables](https://user-images.githubusercontent.com/70695311/101260677-ac37bc80-3774-11eb-908c-69621ef1733f.png)
+
 ### Controller 
 - Manage consumables
