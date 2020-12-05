@@ -33,8 +33,8 @@
            var detail : String? (consumable's information with Percentage)
            var categoryN : String? (consumable's category)
 ### View
-    ![carinfo](./car/carinfo.png)
-    ![contable](/car/contable.PNG)
+    ![carinfo](./image/carinfo.png)
+    ![contable](/image/contable.PNG)
     ![carinfo](/uploads/carinfo.png)
     ![addConsumables](/uploads/addConsumables.png)
     ![modifyConsumables](/uploads/modifyConsumables.png)
