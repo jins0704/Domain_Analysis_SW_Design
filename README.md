@@ -46,6 +46,7 @@
 - AddViewController
 
 > If you select “+” button, you can add consumables through a view. This class controls the view.
+> 
 > We need to adopt some protocols like UIPickerViewDelegate and UIPickerViewDataSource.
              
          We will implement and provide picker views according to a category list.
