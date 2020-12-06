@@ -40,7 +40,7 @@
 3. Also, using the navigator, you can pop the view by pressing the back key on the screen.
 4. The information input for adding or editng cars or consumables, was pushed through the view using the present modal.
 5. The list is organized so that it can be viewed at a glance through the tableview. 
-6. Lastly, All views can be seen on any device without breaking the screen using autorayout.
+6. Lastly, All views can be seen on any device without breaking the screen using AutoLayout.
 >
 ## Controller 
 - AddViewController
