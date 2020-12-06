@@ -43,17 +43,15 @@
 6. Lastly, All views can be seen on any device without breaking the screen using AutoLayout.
 >
 ## Controller 
-- AddViewController
 
-> Receives and stores the required data from the previous view.
-     
-> Connection with view and contoller   
-    
-> If you select “+” button, you can add consumables through a view. This class controls the view.
-> 
-> We need to adopt some protocols like UIPickerViewDelegate and UIPickerViewDataSource.
+#### AddViewController
+
+- Receive and store the required data from the previous view.
+- Connection with view and contoller      
+- If you select “+” button, you can add consumables through a view. This class controls the view. 
+- Adopt some protocols like UIPickerViewDelegate and UIPickerViewDataSource.
              
-    We will implement and provide picker views according to a category list.
+        Implement and provide picker views according to a category list.
       
         func numberOfComponents(in pickerView: UIPickerView) -> Int {
             return 1
@@ -72,10 +70,29 @@
              whatCategoryPeriod = consumablesCategory[row].period
          }
  
-- ConsumablesCell
+#### ConsumablesCell
+    
+- A controller for using a table cell in a table view.
+- Adopt a protocol, UITableViewCell
+      
+      Select Table Cells for Modification
+       
+        override func setSelected(_ selected: Bool, animated : Bool){
+        super.setSelected(selected, animated: animated)
+        }
+        
+#### manageViewController
 
-- manageViewController
+#### modifyViewContoller
 
-- modifyViewContoller
-
-- ViewController
+- Receive and store the required data from the previous view.
+- Connection with view and contoller      
+- If you select a cell or “edit” button, you can edit the information through a view. This class controls the view. 
+- Use one button to store and complete the required data.
+     
+        @IBAction func modifySuccess(_ sender: Any) {
+                namefield = nameField.text
+                if distanceField.text != nil{
+                      distance = Int(distanceField.text!)
+                }
+        }
