@@ -105,8 +105,8 @@
             }
          }
          
- - There are no View Life Cycle because the view switches push or pop.
-    > Update using self.tableview.reloadData()
+ - There is only one View Life Cycle because the view switches push or pop.
+    > if Update, use self.tableview.reloadData()
     
 #### modifyViewContoller
 
