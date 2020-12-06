@@ -44,7 +44,27 @@
 >
 ## Controller 
 - AddViewController
-
+      > If you select “+” button, you can add consumables through a view. This class controls the view.
+      > We need to adopt some protocols like UIPickerViewDelegate and UIPickerViewDataSource.
+             
+         We will implement and provide picker views according to a category list.
+      
+             func numberOfComponents(in pickerView: UIPickerView) -> Int {
+                 return 1
+             }
+    
+             func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+                 return consumablesCategory.count
+             }
+    
+             func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+                 return consumablesCategory[row].name
+             }
+             func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+                 whatCategory = consumablesCategory[row].name
+                 whatCategoryPeriod = consumablesCategory[row].period
+             }
+ 
 - ConsumablesCell
 
 - manageViewController
