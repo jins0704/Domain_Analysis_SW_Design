@@ -83,6 +83,31 @@
         
 #### manageViewController
 
+- UITalbeViewController for a list.
+- There are many funtions like override func table tableView() to reconstruct into the desired table view.
+- Use unwind~(segue : UIStoryboardSegue) when you return this view after updating table.
+        
+       @IBAction func unwindModify(segue : UIStoryboardSegue){ ... }
+     
+       @IBAction func unwindToMainViewController(segue : UIStoryboardSegue{ ... }
+        
+       @IBAction func unwindToAddController(segue : UIStoryboardSegue){ ... }
+ 
+- Send data for the other view 
+      
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "modifyInfo" {
+                if let destVC = segue.destination as? modifyViewController{
+                    destVC.label = consumablesList[selectNum!].categoryN
+                    destVC.namefield = consumablesList[selectNum!].name
+                    destVC.distance = consumablesList[selectNum!].dist
+                }
+            }
+         }
+         
+ - There are no View Life Cycle because the view switches push or pop.
+    > Update using self.tableview.reloadData()
+    
 #### modifyViewContoller
 
 - Receive and store the required data from the previous view.
