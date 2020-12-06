@@ -34,11 +34,13 @@
            var categoryN : String? (consumable's category)
 ## View
 ![carview](https://user-images.githubusercontent.com/70695311/101279016-8d800700-3802-11eb-9cf7-c3a34661547e.PNG)
-          You can choose the four menus below using the tap bar.
-          'Car' and the 'Manage' tap bar, each means 'manage car' and 'manage consumables'
-          Also, using the navigator, you can pop the view by pressing the back key on the screen.
-          The information input for adding or editng cars or consumables, was pushed through the view using the present modal.
-          The list is organized so that it can be viewed at a glance through the tableview. 
-          Lastly, All views can be seen on any device without breaking the screen using autorayout.
+>   
+    You can choose the four menus below using the tap bar.
+    'Car' and the 'Manage' tap bar, each means 'manage car' and 'manage consumables'
+    Also, using the navigator, you can pop the view by pressing the back key on the screen.
+    The information input for adding or editng cars or consumables, was pushed through the view using the present modal.
+    The list is organized so that it can be viewed at a glance through the tableview. 
+    Lastly, All views can be seen on any device without breaking the screen using autorayout.
+>
 ## Controller 
 - Manage consumables
