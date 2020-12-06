@@ -36,7 +36,7 @@
 ![carinfo](https://user-images.githubusercontent.com/70695311/101261008-400a8800-3777-11eb-8120-194d00bd4952.png)
 ![addcar](https://user-images.githubusercontent.com/70695311/101261012-43057880-3777-11eb-8e65-a7b454786eaf.png)
 ![modifycar](https://user-images.githubusercontent.com/70695311/101261014-44cf3c00-3777-11eb-9d33-051132f75458.png)
-
+<img width="99" alt="deletecar" src="https://user-images.githubusercontent.com/70695311/101278730-e8b0fa00-3800-11eb-98d2-933f91300251.png">
 
 ### Controller 
 - Manage consumables
