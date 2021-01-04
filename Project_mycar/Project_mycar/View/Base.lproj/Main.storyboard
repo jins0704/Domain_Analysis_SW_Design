@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bej-Ra-Wks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bej-Ra-Wks">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +21,11 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Car Information" id="tga-Ui-aRq">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="ePj-c2-z02"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="ePj-c2-z02">
+                                            <connections>
+                                                <action selector="photoUpdate:" destination="BYZ-38-t0r" id="3Un-Fn-rK8"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -33,16 +39,16 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="paL-Dy-d5C">
-                                        <rect key="frame" x="223" y="63.5" width="96" height="73"/>
+                                        <rect key="frame" x="223" y="63.5" width="94.5" height="73"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-aR-8W5">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12가3456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-dD-u96">
-                                                <rect key="frame" x="0.0" y="46.5" width="96" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="46.5" width="94.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -50,7 +56,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="paL-Dy-d5C" firstAttribute="leading" secondItem="d1D-zw-KPb" secondAttribute="trailing" constant="40" id="11l-C3-JGi"/>
                                     <constraint firstItem="d1D-zw-KPb" firstAttribute="top" secondItem="58M-lQ-eOk" secondAttribute="top" id="LYD-0c-9Jb"/>
@@ -71,7 +77,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOU-P2-uqi">
                                 <rect key="frame" x="35" y="330" width="344" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="X7a-Zb-2x7"/>
                                 </constraints>
@@ -100,7 +106,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gasoline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-4C-yMp">
                                 <rect key="frame" x="35" y="524" width="344" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gYt-87-Pm9"/>
                                 </constraints>
@@ -110,7 +116,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020 K7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-Nz-LKI">
                                 <rect key="frame" x="35" y="427" width="344" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Rbf-Dy-7O5"/>
                                 </constraints>
@@ -119,7 +125,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KeS-Nz-LKI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="2HT-vK-IXb"/>
                             <constraint firstItem="kki-HA-c5i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2ta-B6-oHz"/>
@@ -146,7 +153,6 @@
                             <constraint firstItem="MVk-Yz-oVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="sSB-69-ggt"/>
                             <constraint firstItem="bci-70-GdR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="zkT-ec-zIM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Car" image="car" catalog="system" id="vHw-pG-ZfV"/>
                 </viewController>
@@ -161,8 +167,8 @@
                     <view key="view" contentMode="scaleToFill" id="Khc-09-Lq1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3b9-TR-TEI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="cart" catalog="system" id="mut-pY-hpc"/>
                 </viewController>
@@ -177,8 +183,8 @@
                     <view key="view" contentMode="scaleToFill" id="mYc-31-xIl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PU6-3k-G75"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="phone.arrow.up.right" catalog="system" id="noq-5J-gox"/>
                 </viewController>
@@ -256,10 +262,10 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2z-hI-kAu">
                                         <rect key="frame" x="20" y="35.5" width="384" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-v9-Rng">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-v9-Rng">
                                         <rect key="frame" x="294" y="60" width="90" height="50"/>
                                         <color key="backgroundColor" red="0.68936900980000004" green="0.9418817276" blue="0.38814538720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -268,7 +274,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="OK">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="modifySuccess:" destination="pE8-Yv-OTI" eventType="touchUpInside" id="xJC-t2-4Kh"/>
@@ -289,7 +295,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pVj-VL-CKF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LZZ-TJ-Mm7" firstAttribute="top" secondItem="izj-Vb-jR1" secondAttribute="bottom" id="4jR-V9-VJI"/>
                             <constraint firstItem="pVj-VL-CKF" firstAttribute="trailing" secondItem="INI-MY-wza" secondAttribute="trailing" id="7dE-zI-vbN"/>
@@ -304,7 +311,6 @@
                             <constraint firstItem="izj-Vb-jR1" firstAttribute="height" secondItem="LZZ-TJ-Mm7" secondAttribute="height" id="ntQ-jf-cVo"/>
                             <constraint firstItem="izj-Vb-jR1" firstAttribute="trailing" secondItem="pVj-VL-CKF" secondAttribute="trailing" id="vXF-DP-eAw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pVj-VL-CKF"/>
                     </view>
                     <connections>
                         <outlet property="CategoryLabel" destination="k2z-hI-kAu" id="0ae-Wv-niF"/>
@@ -324,7 +330,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GeY-Tr-kNr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="d9s-JS-HAz" detailTextLabel="Dex-VT-WE9" rowHeight="203" style="IBUITableViewCellStyleValue1" id="KOa-Im-1pV" customClass="ConsumablesCell" customModule="Project_mycar">
                                 <rect key="frame" x="0.0" y="28" width="414" height="203"/>
@@ -334,7 +340,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d9s-JS-HAz">
-                                            <rect key="frame" x="20" y="92" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="20" y="92" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -490,7 +496,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vKX-JB-n9M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9pJ-ZU-Xlx" firstAttribute="leading" secondItem="vKX-JB-n9M" secondAttribute="leading" id="0NR-0y-GAo"/>
                             <constraint firstItem="5hQ-dP-Gvg" firstAttribute="width" secondItem="lSm-NJ-Gko" secondAttribute="height" multiplier="69:20" id="5eU-DX-JoN"/>
@@ -507,7 +514,6 @@
                             <constraint firstItem="5hQ-dP-Gvg" firstAttribute="top" secondItem="9pJ-ZU-Xlx" secondAttribute="bottom" id="r6T-V9-U7l"/>
                             <constraint firstItem="cI9-jJ-IX5" firstAttribute="trailing" secondItem="vKX-JB-n9M" secondAttribute="trailing" id="sfG-k3-Bg8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vKX-JB-n9M"/>
                     </view>
                     <connections>
                         <outlet property="DistanceField" destination="dTI-Ul-6Sq" id="Lvp-br-PfT"/>
@@ -544,7 +550,19 @@
         <image name="car" catalog="system" width="128" height="93"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="phone.arrow.up.right" catalog="system" width="128" height="115"/>
-        <image name="wrench" catalog="system" width="128" height="120"/>
+        <image name="wrench" catalog="system" width="128" height="128"/>
         <image name="스크린샷 2020-11-30 오후 2.27.30" width="1812" height="1240"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

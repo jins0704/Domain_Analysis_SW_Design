@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func photoUpdate(_ sender: Any) {
+        let photoController = UIImagePickerController()
+        self.present(photoController, animated: true, completion: nil)
+    }
+    
 
 }
 
